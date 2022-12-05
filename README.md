@@ -1,4 +1,4 @@
-##############################################################################################################################
+###########################################################################################################
 
 You are given 9 pool balls. They all appear exactly the same in color and size. There
 are no distinguishing characteristics between each ball, however - 1 of the 9 balls 
@@ -22,17 +22,17 @@ ScalesOfJustice.java - Class to represent the measurement tool
     - Implement the following:
     
         - measureBalls()
-            - Takes a two balls as an argument and return whichever one is larger
+            - Takes two balls as an argument and return whichever one is larger
             - If both balls are equal, return null
 
         - measureBallList()
             - Takes two lists of balls and return whichever list is heavier (contains the heavy ball)
             - If both lists are equal, return null
 
-Implement this class LAST!
 
 App.java - contains your main method and creates a list containing 9 Ball objects, one with a higher weight.
-    Uses the ScalesOfJustice class to perform measurements and inform the user which ball is the heavy ball
+    Uses the ScalesOfJustice class to perform measurements and inform the user which ball is the heavy ball.
+    Implement this class LAST!
     
     - Implement the following:
     
@@ -40,4 +40,4 @@ App.java - contains your main method and creates a list containing 9 Ball object
         - Find the heavy list by calling measureBallList() from ScalesOfJustice
         - Call findHeavyBall() and print out the message telling the user which ball was heavier
 
-##############################################################################################################################
+###########################################################################################################
