@@ -15,37 +15,30 @@ public class ScalesOfJustice {
     public ScalesOfJustice() {
     }
 
+    /*
+     * This counts as 1 measurement each time this method is called
+     */
     Ball measureBalls(Ball b1, Ball b2){
         measurements++;
-        if(b1.getWeight() == b2.getWeight()){
-            //balls weight same, no heavy ball
-            return null;
-        }
-        if (b1.getWeight() > b2.getWeight()){
-            return b1;
-        }
-        return b2;
+
+        //Implement me!
+
+        return null;
     }
 
+    /*
+     * This counts as 1 measurement each time this method is called
+     */
     List<Ball> measureBallList(List<Ball> b1, List<Ball> b2){
         measurements++;
-        int list1TotalWeight = 0;
-        int list2TotalWeight = 0;
-
-        list1TotalWeight = getTotalWeight(b1);
-        list2TotalWeight = getTotalWeight(b2);
-        
-        if(list1TotalWeight == list2TotalWeight){
-            return null;
-        }
-        if(list1TotalWeight > list2TotalWeight){
-            return b1;
-        }
-        return b2;
+                
+        //Implement me!
+    
+        return null;
     }
 
+    //Helper method to total up the weight of a list of Balls
     private static int getTotalWeight(List<Ball> ballList){
-        //this is one measurement
         int total = 0;
         for(Ball b : ballList){
             total += b.getWeight();
