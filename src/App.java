@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class App {
     public static void main (String args[]){
@@ -10,9 +11,14 @@ public class App {
         
         //Your task? Find the heavy ball with the least amount of measurements
       
+        Random rand = new Random();
+        int randomInt = rand.nextInt(9);
+
+        //Create list of balls
+        //Randomly pick one of them to have a larger weight
         ArrayList<Ball> ballList = new ArrayList<>();
         for(int i=0; i<9; i++){
-            ballList.add(createBall(i, i != 2?1:2));
+            ballList.add(createBall(i, i != randomInt?1:1000));
         }
         ballList.forEach((b) -> System.out.println(b.toString()));
 
